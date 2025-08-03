@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vane wall</title>
+  <style>
+    body {
+      background-color: #8ACE00; /* Brat green */
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+
+    .brat-text {
+      color: #1C1C1C; /* Brat black */
+      font-size: 2rem;
+      display: flex;
+      gap: 2rem;
+      cursor: pointer;
+    }
+
+    #image-container {
+      margin-top: 30px;
+      display: none;
+    }
+
+    #image-container img {
+      max-width: 500px;
+      width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brat-text">
+    <span onclick="showImage()">first gift</span>
+    <span> / </span>
+    <a href="https://open.spotify.com/playlist/3MuM8Ke9sS4IbvGhEQYpN5?si=4e7f74aa2e2f4227" target="_blank" style="text-decoration: none; color: #1C1C1C;">second gift</a>
+  </div>
+
+  <div id="image-container">
+    <img src="https://pbs.twimg.com/media/GxceCkcWoAAF8bf?format=png&name=900x900" alt="cover">
+  </div>
+
+  <script>
+    function showImage() {
+      const imageContainer = document.getElementById("image-container");
+      imageContainer.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
